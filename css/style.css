@@ -46,13 +46,13 @@
 
 @media (min-width: 992px) {
   header .active {
-    background-color: black !important;
+    background-color: white !important;
   }
   header .active a {
-    color: white;
+    color: black;
   }
   header .active a:hover {
-    color: white;
+    color: black;
   }
   
 
@@ -61,15 +61,15 @@
     z-index: 2;
   }
   .navbar a {
-    color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
   .navbar a:hover {
-    color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
   .nav-link:hover::after {
     content: "";
     display: block;
-    border-bottom: 3px solid var(--color-1);
+    border-bottom: 3px solid var(--color-2);
     width: 100%;
     margin: auto;
     padding-top: 5px;
@@ -127,6 +127,7 @@
   background-position: center;
   background-image: url("../img/gif.gif");
   height: 65em;
+  background-attachment: fixed;
   margin-top: -230px;
 }
 .jumbotron .display {
@@ -148,5 +149,22 @@
   transform: translate(-50%, -75%) !important;
 }
 
+/* about  */
+
+.sevices {
+  margin: 200px 0 0;
+}
+.services .card {
+  margin: 20px 10px;
+  border-radius: 15px;
+  border: none;
+}
+.services h4 {
+  padding-top: 20px;
+  font-weight: 600;
+}
+.services p {
+  font-weight: 500;
+}
 
 
