@@ -1,3 +1,4 @@
+
 // Navbar
 
 const navbar = document.getElementById("navbar");
@@ -14,7 +15,6 @@ const onScroll = () => {
 };
 
 window.addEventListener("scroll", onScroll);
-
 
 // todo
 
@@ -100,3 +100,4 @@ function deleteOrder(index){
   showOrder();
 
 }
+
