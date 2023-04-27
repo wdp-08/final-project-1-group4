@@ -35,6 +35,9 @@
                 <a class="nav-link" href="#blog">Blog</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#order">Order</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="todo.html">Todos</a>
               </li>
               <li class="nav-item">
@@ -52,12 +55,12 @@
           <div class="container py-5">
             <div class="row justify-content-center">
               <div class="col-12 display">
-                <h1>SNEA <span>CARE</span></h1>
-                <p>
-                  Website yang bergerak dibidang jasa shoe laundry, <br />
-                  Cuci Sepatu Kilat dan Bersih Serta Murah.
+                <h1 class="text-shadow">SNEA <span>CARE</span></h1>
+                <p class="text-shadow">
+                  Selamat Datang di Website Kami! <br />
+                  Cuci Sepatu Cepat dan Bersih Serta Murah.
                 </p>
-                <a href="#pricing" class="btn btn-light btn-lg rounded-pill text-primary mb-5" id="order-now">Order Now</a>
+                <a href="#pricing" class="btn btn-light btn-lg rounded-pill text-primary mb-5" id="order-now" data-bs-toggle="modal" data-bs-target="#exampleModal">Order Now</a>
               </div>
             </div>
           </div>
@@ -167,6 +170,92 @@
         </div>
       </section>
     
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        
+        <div class="content" style="margin: 0px auto;">
+              <div class="container pb-3">
+                <div class="row text-center">
+                  <div class="col-12 title">
+                    <h2>Our <span>Pricing</span></h2>
+                    <p>Penawaran terbaik untuk anda</p>
+                  </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="custom">
+                        <h3 class="text-white py-4">STANDART CLEANSING</h3>
+                      </div>
+                      <div class="card-body">
+                        <h3 class="my-4">40 <sup>k</sup>/ <sub>Item</sub></h3>
+                        <ul>
+                          <li>Cleans Upper</li>
+                          <li>Cleans Lace</li>
+                          <li>Cleans Midsole</li>
+                          <li>Bottom Part Entirely</li>
+                        </ul>
+                      </div>
+                      <div class="card-footer">
+                        <a href="#" class="btn btn-custom btn-lg">Get This</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <h3 class="text py-4">DEEP<br>CLEANSING</h3>
+                      <div class="custom-2">
+                        <div class="card-body text-white">
+                          <h3 class="my-4">50 <sup>k</sup>/ <sub>Item</sub></h3>
+                          <ul>
+                            <li>Cleans Upper</li>
+                            <li>Cleans Lace</li>
+                            <li>Cleans Midsole</li>
+                            <li>Cleans Insole</li>
+                            <li>Bottom Part Entirely</li>
+                          </ul>
+                          <a href="#" class="btn btn-light fw-bold text-primary btn-lg mt-5">Get This</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="card">
+                      <div class="custom">
+                        <h3 class="text-white py-4">PREMIUM</h3>
+                      </div>
+                      <div class="card-body p-0 mt-3">
+                        <h3 class="my-4">100 <sup>k</sup>/ <sub>Item</sub></h3>
+                        <ul>
+                          <li>Cleans Upper</li>
+                          <li>Cleans Lace</li>
+                          <li>Cleans Midsole</li>
+                          <li>Cleans Insole</li>
+                          <li>Bottom Part Entirely</li>
+                          <li>+ PICK UP & DELIVERY</li>
+                        </ul>
+                      </div>
+                      <div class="card-footer pt-0">
+                        <a href="#" class="btn btn-custom btn-lg">Get This</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
