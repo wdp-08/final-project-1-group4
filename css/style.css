@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Text shadow */
+.text-shadow{
+  text-shadow: 3px 2px 5px rgb(0, 0, 0);
+}
 
 /* root */
 
@@ -46,13 +50,13 @@
 
 @media (min-width: 992px) {
   header .active {
-    background-color: black !important;
+    background-color: white !important;
   }
   header .active a {
-    color: white;
+    color: black;
   }
   header .active a:hover {
-    color: white;
+    color: black;
   }
   
 
@@ -61,15 +65,15 @@
     z-index: 2;
   }
   .navbar a {
-    color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
   .navbar a:hover {
-    color: var(--color-1) !important;
+    color: var(--color-2) !important;
   }
   .nav-link:hover::after {
     content: "";
     display: block;
-    border-bottom: 3px solid var(--color-1);
+    border-bottom: 3px solid var(--color-2);
     width: 100%;
     margin: auto;
     padding-top: 5px;
@@ -127,6 +131,7 @@
   background-position: center;
   background-image: url("../img/gif.gif");
   height: 65em;
+  background-attachment: fixed;
   margin-top: -230px;
 }
 .jumbotron .display {
@@ -146,6 +151,154 @@
 
 .img-fluid {
   transform: translate(-50%, -75%) !important;
+}
+
+/*  pricing */
+
+#pricing {
+  display: none;
+}
+
+.pricing-container-1 {
+  height: 100%;
+  z-index: 15;
+}
+
+.content {
+  width: 60em;
+}
+
+#exit {
+  border-radius: 50%;
+}
+
+#exit img {
+  width: 60px;
+}
+
+.content .card {
+  border-radius: 24px !important;
+  border: none;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  height: 500px;
+}
+.content .custom {
+  background: var(--color-2);
+  border-radius: 24px 24px 0 0 !important;
+}
+.content .custom-2 {
+  background: var(--color-2);
+  border-radius: 0px 0px 24px 24px !important;
+  height: 500px;
+}
+.content h3 {
+  font-weight: bolder;
+  font-size: 32px;
+}
+.content ul {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  margin-left: -40px;
+}
+.content .card-footer {
+  border: none;
+  margin-bottom: 30px;
+  background: transparent;
+}
+
+.card .text {
+  background: var(--color-2);
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .content-container-1 {
+    width: 100vw;
+    height: auto;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .card {
+    margin: 1em 0;
+  }
+}
+
+/* about  */
+
+.sevices {
+  margin: 200px 0 0;
+}
+.services .card {
+  margin: 20px 10px;
+  border-radius: 15px;
+  border: none;
+}
+.services h4 {
+  padding-top: 20px;
+  font-weight: 600;
+}
+.services p {
+  font-weight: 500;
+}
+
+/*  Portofolio  */
+
+.img-container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.image-wrapper {
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+  grid-gap: 1.5rem;
+  left: 0;
+  transition: 0.3s;
+}
+
+.image-wrapper > * {
+  aspect-ratio: 4 / 3;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.image-wrapper .img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* blog */
+
+.h2 h2{
+  color: white;
+  margin-top: 50px;
+}
+.blog .card:hover {
+  box-shadow: 0px 14px 38px -9px rgba(0, 0, 0, 0.3), -1px 6px 18px -201px rgba(0, 0, 0, 0.22);
+  transition: all 0.5s;
+}
+
+.blog .card-title:hover {
+  background: var(--color-2);
+  -webkit-text-fill-color: transparent;
+}
+
+#blog{
+  background: url(../img/background.jpg) center center / cover no-repeat;
 }
 
 
