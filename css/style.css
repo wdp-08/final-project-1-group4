@@ -292,11 +292,6 @@
   transition: all 0.5s;
 }
 
-.blog .card-title:hover {
-  background: var(--color-2);
-  -webkit-text-fill-color: transparent;
-}
-
 #blog{
   background: url(../img/background.jpg) center center / cover no-repeat;
 }
