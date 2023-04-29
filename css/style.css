@@ -246,4 +246,119 @@
   font-weight: 500;
 }
 
+/*  Portofolio  */
+
+.img-container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.image-wrapper {
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - (1.5rem * (var(--per-view) - 1))) / var(--per-view));
+  grid-gap: 1.5rem;
+  left: 0;
+  transition: 0.3s;
+}
+
+.image-wrapper > * {
+  aspect-ratio: 4 / 3;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.image-wrapper .img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* blog */
+
+.h2 h2{
+  color: white;
+  margin-top: 50px;
+}
+.blog .card:hover {
+  box-shadow: 0px 14px 38px -9px rgba(0, 0, 0, 0.3), -1px 6px 18px -201px rgba(0, 0, 0, 0.22);
+  transition: all 0.5s;
+}
+
+.blog .card-title:hover {
+  background: var(--color-2);
+  -webkit-text-fill-color: transparent;
+}
+
+#blog{
+  background: url(../img/background.jpg) center center / cover no-repeat;
+}
+
+/* Kontak*/
+
+@media (min-width: 992px) {
+  .kontak .alamat {
+    position: absolute;
+    z-index: 1;
+    width: 475px;
+    margin-top: 65px;
+  }
+}
+.kontak .alamat {
+  background: var(--color-2);
+  color: var(--color-1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.kontak .container {
+  padding: 100px 0;
+}
+.kontak i {
+  font-size: 28px;
+}
+.kontak {
+  background: url(../img/gif2.gif) center center / cover no-repeat;
+}
+
+/* footer  */
+
+i {
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+#blog{
+  background: url(../img/background.jpg) center center / cover no-repeat;
+}
+
+
+
+/* custom size  */
+
+input,
+textarea {
+  outline: none;
+}
+.form {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 786px) {
+  .form {
+    width: 100%;
+  }
+}
 
