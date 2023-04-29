@@ -44,15 +44,24 @@ function showOrder() {
 
   orderlist.forEach(function (element, index){
       table.innerHTML += `
-      <tr>
-          <td>${element.nama}</td>
-          <td>${element.sepatu}</td>
-          <td>${element.layanan}</td>
-          <td id="status">Waiting</td>
-          <td>
-          <button onclick="deleteOrder(${index})" class="btn btn-danger">Delete</button>
-          </td>
-      </tr>`
+      <div class="container">      
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">${element.sepatu}</p>
+                      <p><span class="text-muted">Owner: </span>${element.nama}</p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">${element.layanan}</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a onclick="deleteOrder(${index})" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>`
   });
   // console.log(orderlist);
 }
