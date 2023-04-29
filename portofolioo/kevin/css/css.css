@@ -1,0 +1,220 @@
+*{padding: 0; margin: 0; font-family: sans-serif;}
+        
+ /*css menu*/  
+menu {
+      background-color:black;
+      box-shadow: inset;
+      height: 60px;}
+
+    .portofolio h1 {
+                    color: white;
+                    font-size: x-large;
+                    padding-top: 15px;
+                    padding-left: 50px;}
+    
+    body{background-color:#e58e26;}
+    
+    ul li  {
+           
+            display: flex;
+            float: right;
+            list-style: none;
+            background-color:transparent;
+            margin-top: -55px;
+        
+        }
+        
+        
+    ul li a{
+                text-decoration:none;
+                color:white;
+                font-family:monospace;
+                padding: 15px;
+                margin:15px;
+                font-size: 17px
+            }
+    
+    ul li a:hover{
+            color:orange;
+            }
+
+            
+        /* Css header */
+
+        header .foto img {
+            width: 150px;
+            border-radius: 100px;
+            margin:19px;
+            }
+
+            header {
+                background-color: black;
+                width: 90%;
+                height: 250px;
+                margin-top: 50px;
+                margin-left: 75px;
+                border-radius: 10px;
+            }
+
+        header .profil {
+            margin-top: -215px;
+            margin-left: 230px;
+        }
+
+        header .profil h1{
+            color: white;
+        }
+
+        header .profil p{
+            color:#e58e26;padding-top: 15px;
+        }
+
+
+        header .Kontak button{
+            color: black;
+            margin-top: 35px;
+            margin-left: 230px;
+            border-radius: 5px;
+             width: 97px;height:40px;
+             background-color: white;
+            }
+
+        header .Kontak button{
+            font-size: 18px; 
+            text-align: center;
+            padding: 10px;
+        }
+
+        header .Kontak button:hover{
+            background-color:#e58e26
+        }
+
+       
+        header .resume{
+            color: white;
+            margin-top: -41px;
+            margin-left: 350px;
+            border-radius: 5px; 
+            width: 97px;
+            height:37px;
+            background-color: transparent;
+            border-color: white;
+            border-style: inset;
+            border-width: 2px;
+            }
+
+        header .resume h1{
+            font-size: 18px; 
+            text-align: center;
+            padding: 10px;
+        }
+        header .resume:hover{
+            background-color:#e58e26
+        }
+
+        header .biodata {
+            margin-left: 670px;
+            color:white; 
+            margin-top: -150px; 
+            font-size: 10px;
+        }
+
+        header .Avai ,.Usia ,.Lokasi ,.Pengalaman ,.Email {
+            padding-bottom: 15px;
+        }
+
+        header .Avai p{
+            font-size: 15px;
+            color: #e58e26;
+            margin-top: -18px;
+            margin-left: 200px;
+        }
+
+        header .Usia p{
+            font-size: 15px;
+            color: #e58e26;
+            margin-top: -18px;
+            margin-left: 200px;
+        }
+
+        header .Lokasi p{
+            font-size: 15px;
+            color: #e58e26;
+            margin-top: -18px;
+            margin-left: 200px;
+        }
+
+        header .Pengalaman p{
+            font-size: 15px;
+            color: #e58e26;
+            margin-top: -18px;
+            margin-left: 200px;
+        }
+
+        header .Email p{
+            font-size: 15px;
+            color:#e58e26;
+            margin-top:-18px;
+            margin-left:200px;
+            }
+
+        .Background{
+            background-color: transparent;
+            width: 90%;
+            height: 670px;
+            margin-top: 50px;
+            margin-left: 75px;
+            border-radius: 10px;
+            
+        }
+
+        /*css form*/
+        .Form {
+            margin-top: 16px;
+            margin-left: 20px;
+            width: 500px;
+            height: 600px;
+            visibility: hidden;
+            
+
+        }
+
+        
+        
+
+        input[type=text], select, textarea {
+            width: 1300px; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+           
+           }
+          
+        
+          input[type=submit] {
+            background-color: black;
+            color: white;
+            width: 1300px ;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+          }
+          
+          .Form label {color:#e58e26;}
+    
+        /*css footer*/
+          footer {
+            background-color: black;
+            color:#e58e26 ;
+            text-align: center;
+            font-size: 15px;
+            line-height: 70px;
+            height: 70px;
+            margin-top: 50px;
+    
+    
+        }
+        footer a {color: white;}
