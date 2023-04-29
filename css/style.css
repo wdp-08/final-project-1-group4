@@ -301,5 +301,63 @@
   background: url(../img/background.jpg) center center / cover no-repeat;
 }
 
+/* Kontak*/
+
+@media (min-width: 992px) {
+  .kontak .alamat {
+    position: absolute;
+    z-index: 1;
+    width: 475px;
+    margin-top: 65px;
+  }
+}
+.kontak .alamat {
+  background: var(--color-2);
+  color: var(--color-1);
+  padding: 20px;
+  border-radius: 10px;
+}
+.kontak .container {
+  padding: 100px 0;
+}
+.kontak i {
+  font-size: 28px;
+}
+.kontak {
+  background: url(../img/gif2.gif) center center / cover no-repeat;
+}
+
+/* footer  */
+
+i {
+  font-size: 32px;
+  padding: 0 10px;
+}
+
+#blog{
+  background: url(../img/background.jpg) center center / cover no-repeat;
+}
 
 
+
+/* custom size  */
+
+input,
+textarea {
+  outline: none;
+}
+.form {
+  width: 50%;
+}
+
+@media (max-width: 992px) {
+  .form {
+    width: 70%;
+  }
+}
+
+@media (max-width: 786px) {
+  .form {
+    width: 100%;
+  }
+}

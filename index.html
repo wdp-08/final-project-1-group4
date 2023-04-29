@@ -137,21 +137,49 @@
 
   <!-- portfolio -->
   <section class="portofolio" id="portofolio">
-    <div class="img-container container px-4 text-center">
-      <div class="row">
+    <div class="container text-center">
         <div class="col-12 mb-4 title">
-          <h2>Our <span>Portfolio</span></h2>
+          <h2>Our <span>Portofolio</span></h2>
         </div>
-        <div class="image-wrapper position-relative d-grid pt-2">
-          <div class="img col">
-            <a href="portofolio/kevin/index.html" title="Portfolio"><img src="img/portfolio/app-1.jpg" alt="" /></a>
+        <div class="row">
+          <!-- card portofolio -->
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 20rem;">
+              <img src="img/portfolio/defult.jpg" class="card-img-top" alt="Sindi">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Adam Bagus</h5>
+                <p class="card-text">Sekolah Tinggi Teknologi Bandung</p>
+                <a href="#" class="btn btn-primary">Open Portofolio</a>
+              </div>
+            </div>
           </div>
-          <div class="img col">
-            <a href="portofolio/Adam/portfolio.html" title="Portfolio"><img src="img/portfolio/app-1.jpg" alt="" /></a>
+          <!-- end card portofolio -->
+
+          <!-- card portofolio -->
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 20rem;">
+              <img src="img/portfolio/defult.jpg" class="card-img-top" alt="Sindi">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Kevin Lukas</h5>
+                <p class="card-text">Sekolah Tinggi Teknologi Bandung</p>
+                <a href="#" class="btn btn-primary">Open Portofolio</a>
+              </div>
+            </div>
           </div>
-          <div class="img col">
-            <a href="portofolio/sindi/profile.html" title="Portfolio"><img src="img/portfolio/app-1.jpg" alt="" /></a>
+          <!-- end card portofolio -->
+          
+          <!-- card portofolio -->
+          <div class="col-md-4 mb-3">
+            <div class="card" style="width: 20rem;">
+              <img src="img/portfolio/card-Sindi.jpeg" class="card-img-top" alt="Sindi">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Sindi Oktafianti</h5>
+                <p class="card-text">Sekolah Tinggi Teknologi Bandung</p>
+                <a href="portofolio/sindi/profile.html" class="btn btn-primary">Open Portofolio</a>
+              </div>
+            </div>
           </div>
+          <!-- end card portofolio -->
         </div>
       </div>
     </div>
@@ -265,8 +293,130 @@
           </div>
         </div>
       </section>
+
+      <!-- contact -->
+      <section class="kontak" id="kontak">
+        <div class="container p-3 p-sm-0">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="fw-bold text-center text-white pt-5 pb-4">Contact Us</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center pb-5">
+            <div class="col-xl-3 col-lg-4 col-12 m-0">
+              <div class="card alamat">
+                <div class="card-body">
+                  <h5 class="fw-bold pb-5">Contact Information</h5>
+                  <div class="row">
+                    <div class="col-1 mb-3">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="col-10 offset-1 mb-3">
+                      <p>l. Arteri Pd. Indah No.7, RT.5/RW.9, Kby. Lama Sel., Kec. Kby. Lama, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12240</p>
+                    </div>
+                    <div class="col-1 mb-3">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="col-10 offset-1 mb-3">
+                      <p>senacare@gmail.com</p>
+                    </div>
+                    <div class="col-1 mb-3">
+                      <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="col-10 offset-1 mb-3">
+                      <p>0812-1816-9266</p>
+                    </div>
+                    <div class="col-lg-12 mt-5">
+                      <i class="fab fa-facebook-square"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row justify-content-end">
+                    <div class="col-lg-9 p-5">
+                      <form action="https://formspree.io/f/mknevylp" method="POST">
+                        <h3 class="fw-bold mb-5">Send a massage</h3>
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label text-primary">Your name</label>
+                            <input type="text" class="w-100 border-0 border-bottom mb-3 p-1" placeholder="Enter Your name" id="name" name="name" />
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="number" class="form-label text-primary">Mobile Number</label>
+                            <input type="text" class="w-100 border-0 border-bottom mb-3 p-1" placeholder="Enter your mobile number" id="number" name="number" />
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="subject" class="form-label text-primary">Address</label>
+                            <input type="text" class="w-100 border-0 border-bottom mb-3 p-1" placeholder="Subject..." id="subject" name="subject" />
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label text-primary">Email Address</label>
+                            <input type="text" class="w-100 border-0 border-bottom mb-3 p-1" placeholder="Enter your email address" id="email" name="email" />
+                          </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                          <label for="message" class="form-label text-primary">Kritik dan Saran</label>
+                          <textarea class="w-100 border-0 border-bottom mb-4 p-1" id="massage" placeholder="write your massage" rows="1" name="message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary rounded-1">Send message</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     
-      <!-- Modal -->
+<!-- Footer -->
+<footer>
+      <section id="">
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-lg-3 mt-3">
+              <h2 class="fw-bold title">Snea<span>Care</span></h2>
+            </div>
+            <div class="col-lg-4 mt-3">
+              <h6 class="fw-bold">ABOUT</h6>
+              <p>
+                SneaCare adalah usaha yang bergerak dibidang jasa pencucian khusus sepatu. SneaCare didirikan pada tanggal 16 April 2023 yang dapat dibilang sebagai pionir laundry sepatu di Indonesia, berawal dari tugas mata kuliah kewirausahaan disalah satu bootcamp ternama. 
+                Pengambilan nama SneaCare merupakan gabungan dari kata serapan bahasa inggris yaitu Sneakers dan Care yang memiliki arti sepatu kets yang diberi perhatian.
+              </p>
+            </div>
+            <div class="col-lg-5 mt-3 my-lg-auto text-lg-end">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-custom">
+        <div class="container">
+          <div class="row text-white">
+            <div class="col-lg-8 col-12 text-lg-start text-center">
+              <p class="pt-4 pb-lg-2">©Copyright SneaCare 2023</p>
+            </div>
+            <div class="col-6 col-lg-2 text-lg-end text-center">
+              <p class="pt-lg-4 pb-lg-2">Privacy Policy</p>
+            </div>
+            <div class="col-6 col-lg-2 text-lg-end text-center">
+              <p class="pt-lg-4 pb-2">Terms & Conditions</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
