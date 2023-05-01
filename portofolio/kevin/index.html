@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+    
+<nav>
+<div class="portofolio">
+  <a href="#">Portofolio</a>
+</div>
+    <ul class="menu">
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">PRODUCT</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">BLOG</a></li>
+      <li><a href="#">IVENTORY</a></li>
+    </ul>
+</nav>
+     
+<div class="container">
+  <img src="image/foto.jpeg"  class = "foto">
+
+    <div class = "profile" >
+        <h2 id="nama">Kevin Lukas</h2>
+        <p id="role">Front End Developer</p>
+        <br>
+
+        <div class = "button" >
+          <button class="edit" onclick="editBiodata()"  id="edit-data-btn">Edit</button>
+          <br>
+          <button class="resume" onclick="editBiodata()">Resume</button>
+        </div>
+    </div>
+
+    <div class = "biodata" >
+        <pre>Availability: </pre>
+        <br>
+        <pre>Usia: </pre>
+        <br>
+        <pre>Lokasi: </pre>
+        <br>
+        <pre>Pengalaman: </pre>
+        <br>
+        <pre>Email: </pre>
+    </div>
+
+          <div class = "bio_value" >
+            <pre id="availability">Full Time</pre>
+            <br>
+            <pre id="usia">20</pre>
+            <br>
+            <pre id="lokasi">Jakarta Barat</pre>
+            <br>
+            <pre id="pengalaman">Belajar di Hacktivate</pre>
+            <br>
+            <pre id="email">kevinlukas1803@gmail.com</pre>
+
+    </div>
+      
+
+  <div class= container3>
+  </div>
+  <div class =container2>
+      <form>
+    
+            <label for="nama" class = "label" id="nama-label">Nama:</label>
+            <input type="text" class = "input" name="nama" id="nama-value" required>
+          
+            <label for="role" class = "label" id="role-label">Bidang:</label>
+            <input type="text" class = "input" name="role" id="role-value" required>
+            
+            <label for="availability" class = "label" id="availability-label">Availability:</label>
+            <input type="text" class = "input" name="availability" id="availability-value" required>
+            
+            <label for="usia" class = "label" id="usia-label">Usia:</label>
+            <input type="text" class = "input" name="usia" id="usia-value" required>
+            
+            <label for="lokasi" class = "label" id="lokasi-label">Lokasi:</label>
+            <input type="text" class = "input" name="lokasi" id="lokasi-value" required>
+
+            <label for="pengalaman" class = "label" id="pengalaman-label">pengalaman:</label>
+            <input type="text" class = "input" name="pengalaman" id="pengalaman-value" require>
+          
+            <label for="email" class = "label" id="email-label">Email:</label>
+            <input type="email" class = "input" name="email" id="email-value"required>
+            <br>
+      
+            <button type="submit" class="button-form" id="simpan-btn">UPDATE</button>
+          
+      </form>
+  </div>
+</body>
+
+<footer>
+  Copyright &copy; 2023 |<a href="https://gunungkidulkab.go.id/" target="_blank">MYWEBSITE</a>
+</footer> 
+
+<script src="js/js.js"></script>
+
+</html>
