@@ -24,7 +24,8 @@ function orderValidation() {
   let layanan = document.getElementById("layanan").value;
 
   if(nama == "" || sepatu == "" || layanan == ""){
-      alert("Data anda tidak lengkap!")
+    swal("Data kamu tidak lengkap!", "Tolong isikan dengan lengkap", "warning");
+    alert("Data kamu tidak lengkap!")
       return false;
   }
   return true;
@@ -55,10 +56,15 @@ function showOrder() {
                     <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
                       <h5 class="mb-0">${element.layanan}</h5>
                     </div>
-                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
-                      <a onclick="deleteOrder(${index})" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">${element.harga}</h5>
+                    </div>    
+                    <div class="col-md- col-lg-1 col-xl-1 text-end">
+                    <button onclick="payOrder(${index})" class="btn btn-success" id="pay"><a class="text-light"><i class="fa fa-credit-card fa-lg"></i></a>Bayar</button>
                     </div>
-                  </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                    <button onclick="deleteOrder(${index})" class="btn btn-danger"><a class="text-light"><i class="fa fa-trash fa-lg"></i></a>Hapus</button>
+                    </div>
                 </div>
               </div>
         </div>`
@@ -73,7 +79,14 @@ function addOrder(){
       let nama = document.getElementById("nama").value;
       let sepatu = document.getElementById("sepatu").value;
       let layanan = document.getElementById("layanan").value;
-
+      let harga = "";
+      if(layanan == "Standard Cleansing"){
+        harga = "40K"
+      } else if(layanan == "Deep Cleansing"){
+        harga = "50K"
+      } else if(layanan == "Premium Cleansing"){
+        harga = "100K"
+      }
       let orderlist;
   if (localStorage.getItem("orderlist") == null) {
       orderlist = [];
@@ -84,11 +97,14 @@ function addOrder(){
   orderlist.push({
       nama : nama,
       sepatu : sepatu,
-      layanan : layanan
+      layanan : layanan,
+      harga: harga
   });
-
+  
   localStorage.setItem("orderlist", JSON.stringify(orderlist));
   showOrder();
+  swal("Berhasil Order!", "Ayo order lagi!", "success");
+  alert("Berhasil Order!")
   document.getElementById("nama").value = "";
   document.getElementById("sepatu").value = "";
   document.getElementById("layanan").value = "";
@@ -107,6 +123,22 @@ function deleteOrder(index){
   orderlist.splice(index, 1);
   localStorage.setItem("orderlist", JSON.stringify(orderlist))
   showOrder();
+  swal("Berhasil Menghapus!", ":)", "success");
 
 }
 
+function payOrder(index){
+  let orderlist;
+  if (localStorage.getItem("orderlist") == null) {
+      orderlist = [];
+  } else{
+      orderlist = JSON.parse(localStorage.getItem("orderlist"))
+  }
+    orderlist[index].harga = "Transaksi Selesai"
+
+    localStorage.setItem("orderlist", JSON.stringify(orderlist));
+    swal("Transaksi Berhasil!", "Terima Kasih", "success");
+    showOrder();
+    
+
+}
